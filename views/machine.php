@@ -52,9 +52,7 @@ $t=$_SESSION['turn'];
 
  if($t==2){
 //print($var->AIPlay());
- 	$daoJoueur=new DAOJoueurImpl($instance);
-	$daoScore=new DAOScoreImpl($instance);
- 
+ 	 
 $jouer=new Jouer($r);
 if($jouer->jouer($var->AIPlay(), $t)){
 $gagner=new Gagner($r);
