@@ -14,9 +14,10 @@ $result="";
     $result=$_SESSION['result'];
 	}
 
-	define('DSN','mysql:host=localhost;dbname=puissance4');
- 	define('USER','root');
- 	define('PASSWORD','');
+	
+	define('DSN','mysql:host=remotemysql.com;dbname=ZUYu8a6dAH');
+ 	define('USER','ZUYu8a6dAH');
+ 	define('PASSWORD','SaDMu8KAZP');
 	$instance=DB::getInstance(DSN, USER, PASSWORD);
 
 	/*
