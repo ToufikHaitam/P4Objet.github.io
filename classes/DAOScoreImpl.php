@@ -67,7 +67,7 @@
 		function getAllScores(){
 			$scores = [];
 	    	try{
-	    		$stmt = $this->_pdo->query('SELECT * FROM scores');
+	    		$stmt = $this->_pdo->query('SELECT * FROM scores ORDER BY score DESC');
 			    while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 			    {
 			      $scores[] = new Scores($row);
